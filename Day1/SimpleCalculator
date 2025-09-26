@@ -1,0 +1,34 @@
+#Simple Calculator
+o=True
+def add(x,y):
+    return x+y
+def sub(x,y):
+    return x-y
+def mul(x,y):
+    return x*y
+def div(x,y):
+    return x/y
+print("Simple Calculator: ")
+while o:
+    choice=int(input("1.Add 2.Sub 3.Mul 4.Div 5.Exit.(Enter any choice): "))
+    if choice==1:
+        num1= float(input("Enter 1st Number: "))
+        num2= float(input("Enter 2nd Number: "))  
+        print("Add of num1 and num2 is: ",add(num1,num2))
+    elif choice==2:
+        num1= float(input("Enter 1st Number: "))
+        num2= float(input("Enter 2nd Number: "))
+        print("Sub of num1 and num2 is: ",sub(num1,num2))
+    elif choice==3:
+        num1= float(input("Enter 1st Number: "))
+        num2= float(input("Enter 2nd Number: "))
+        print("Mul of num1 and num2 is: ",mul(num1,num2))
+    elif choice==4:
+        num1= float(input("Enter 1st Number: "))
+        num2= float(input("Enter 2nd Number: "))
+        print("Div of num1 and num2 is: ",div(num1,num2))
+    elif choice==5:
+        print("Exiting...")
+        break
+    else:
+        print("Invalid Choice!")
