@@ -1,0 +1,7 @@
+#Palindrome
+a=input("Enter a Text : ")
+b=a.lower()
+if b[::-1]==b:
+    print("The Given Text is a Palindrome.")
+else:
+    print("The Given Text is NOT a Palindrome.")
