@@ -1,0 +1,7 @@
+#Rectangle Area Calc
+length = int(input("Enter the Length of the rectangle: "))
+breadth=int(input("Enter the Breadth of the rectangle: "))
+
+area=length*breadth
+
+print("The Area of the Rectangle is: ",area)
