@@ -1,0 +1,17 @@
+import smtplib
+from email.message import EmailMessage
+
+email = EmailMessage()
+email["From"] = "your_email@gmail.com"
+email["To"] = "receiver_email@gmail.com"
+email["Subject"] = "Test Email"
+
+email.set_content("This is an automated email sent using Python.")
+
+server = smtplib.SMTP("smtp.gmail.com", 587)
+server.starttls()
+server.login("your_email@gmail.com", "your_app_password")
+server.send_message(email)
+server.quit()
+
+print("Email sent successfully")
